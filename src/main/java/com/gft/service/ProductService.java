@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response;
 @Component
 @Path("/Products")
 public class ProductService {
-    private static List<Product> Products = new ArrayList<Product>();
+    private static List<Product> Products = new ArrayList<>();
     static {
         Product product1 = new Product();
         product1.setId(1);
