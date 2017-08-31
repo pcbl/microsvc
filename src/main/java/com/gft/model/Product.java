@@ -1,16 +1,10 @@
 package com.gft.model;
 
-public class Product {
-    private long id;
+import com.gft.repositories.Entity;
+
+public class Product extends Entity {
     private String name;
     private String category;
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
