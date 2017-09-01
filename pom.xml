@@ -48,7 +48,6 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.3.4</version>
                 <configuration>
-                    <serverId>dockerpcbl</serverId>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
                 </configuration>
             </plugin>
