@@ -1,0 +1,9 @@
+com\gft\repositories\InMemoryRepository.class
+com\gft\repositories\IRepository.class
+com\gft\ApplicationConfig.class
+com\gft\ApplicationConfig$JerseyConfig.class
+com\gft\model\Product.class
+com\gft\repositories\Entity.class
+com\gft\service\ProductService.class
+com\gft\Application.class
+com\gft\repositories\MongoRepository.class
