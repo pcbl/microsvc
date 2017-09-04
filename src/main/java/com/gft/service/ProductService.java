@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Component
-@Path("/")
+@Path("/Products")
 public class ProductService {
     public static IRepository<Product> repository;
     @GET
