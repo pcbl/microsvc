@@ -2,17 +2,19 @@ package com.gft.service;
 
 import com.gft.model.Product;
 import com.gft.repositories.IRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.net.URI;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Component
+@Service
 @Path("/Products")
 public class ProductService {
-    public static IRepository<Product> repository;
+    @Autowired
+    private IRepository<Product> repository;
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Iterable<Product> getProducts() {

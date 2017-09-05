@@ -1,8 +1,10 @@
 package com.gft.repositories;
 
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class InMemoryRepository<T extends Entity> implements IRepository<T> {
     private List<T> items = new ArrayList<>();
 
